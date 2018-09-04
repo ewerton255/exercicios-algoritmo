@@ -10,6 +10,7 @@ function questao02() {
     7- Sábado   
     Insira o número do dia da semana:`))
 
+    
     if (dia > 1 && dia < 7) {
         console.log('É um dia útil!')
     } else if (dia == 1 || dia == 7) {

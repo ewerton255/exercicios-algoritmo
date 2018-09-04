@@ -1,4 +1,4 @@
-function questao04() {
+function questao04() { //Input para usuário inserir o cpf
     let cpf = window.prompt(`Insira o cpf:
     OBS: Somente números!`)
 

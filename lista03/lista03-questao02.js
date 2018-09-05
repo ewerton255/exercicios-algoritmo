@@ -10,12 +10,29 @@ function questao02() {
     7- Sábado   
     Insira o número do dia da semana:`))
 
-    
-    if (dia > 1 && dia < 7) {
-        console.log('É um dia útil!')
-    } else if (dia == 1 || dia == 7) {
-        console.log('É final de semana!')
-    } else {
-        console.log('Dia inválido!')
+    switch (dia) {
+        case 1:
+            console.log('É final de semana!')
+            break
+        case 2:
+            console.log('É um dia útil!')
+            break
+        case 3:
+            console.log('É um dia útil!')
+            break
+        case 4:
+            console.log('É um dia útil!')
+            break
+        case 5:
+            console.log('É um dia útil!')
+            break
+        case 6:
+            console.log('É um dia útil!')
+            break
+        case 7:
+            console.log('É um final de semana!')
+            break
+        default:
+            console.log('Dia inválido!')
     }
 }

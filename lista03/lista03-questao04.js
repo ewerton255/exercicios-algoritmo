@@ -52,8 +52,8 @@ function questao04() { //Input para usuário inserir o cpf
         case true:
             console.log('CPF Válido!')
             break
-        case false:
+        default:
             console.log('CPF Inválido!')
-            break
+
     }
 }

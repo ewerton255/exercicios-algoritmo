@@ -1,6 +1,7 @@
 function questao04() { //Input para usuário inserir o cpf
     let cpf = window.prompt(`Insira o cpf:
     OBS: Somente números!`)
+    let valido
 
     // Transforma o cpf recebido num array
     let arrayCpf = Array.from(cpf)
@@ -33,17 +34,26 @@ function questao04() { //Input para usuário inserir o cpf
             if (subtracaoDois < 10) {
 
                 if (subtracaoDois == arrayCpf[10] || subtracaoDois == 0) {
-                    console.log('CPF Válido!')
+                    valido = true
                 }
 
             } else {
-                console.log('CPF inválido!')
+                valido = false
             }
 
         } else {
-            console.log('CPF inválido!')
+            valido = false
         }
     } else {
-        console.log('CPF inválido!')
+        valido = false
+    }
+
+    switch (valido) {
+        case true:
+            console.log('CPF Válido!')
+            break
+        case false:
+            console.log('CPF Inválido!')
+            break
     }
 }
